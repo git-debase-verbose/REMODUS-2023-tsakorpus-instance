@@ -1,0 +1,43 @@
+{
+  "corpus_name": "",
+  "corpus_dir": "corpus",
+  "meta_filename": "meta.csv",
+  "error_log": "error.log",
+  "parsed_wordlist_filename": "words.txt",
+  "parsed_wordlist_format": "xml_rnc",
+  "meta_fields":
+  [
+    "filename",
+	"source",
+  "reference",
+  "collector",
+  "speaker",
+  "title",
+  "year"
+  ],
+  "meta_files_ext": true,
+  "meta_files_dir": true,
+  "meta_files_case_sensitive": true,
+  "languages": ["mari", "hungarian", "german", "old_hungarian", "orig_mari"],
+  "json_indent": -1,
+  "gzip": false,
+  "convert_quotes": true,
+  "left_quot_mark": "«",
+  "right_quot_mark": "»",
+  "sent_end_punc": "(?:[.!?;;]+(?:[)\\]}>/»]|$)|\\\\n)",
+  "sent_start": "^[A-ZÄÖÜА-ЯЁӤӦӴӞӜ0-9]",
+  "newline_ends_sent": true,
+  "abbreviations": [],
+  "media_length": 60,
+  "corpus_type": "parallel",
+  "meta_in_header": false,
+  "multivalued_ana_features": ["gr"],
+  "language_codes": {
+    "mari": "mari",
+    "hu": "hungarian",
+    "de": "german",
+    "old_hu": "old_hungarian",
+    "orig_mari": "orig_mari"
+  },
+  "clean_words_rnc": false
+}

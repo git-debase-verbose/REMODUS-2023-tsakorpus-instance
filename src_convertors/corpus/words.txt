@@ -1,0 +1,15 @@
+<w><ana lex="jer" gr="n" trans_en="lake"></ana>der</w>
+<w><ana lex="joškar" gr="adj" trans_en="red"></ana>dośkar</w>
+<w><ana lex="jülaš" gr="v,prs,3sg" trans_en="burn"></ana>dülà</w>
+<w><ana lex="kašta" gr="n,loc" trans_en="beam"></ana>kaštaśte</w>
+<w><ana lex="koč" gr="pp" trans_en="over"></ana>kotś</w>
+<w><ana lex="oš" gr="adj" trans_en="white"></ana>o8</w>
+<w><ana lex="pokšelne" gr="pp" trans_en="in the middle"></ana>pokkselne</w>
+<w><ana lex="pügö" gr="n" trans_en="bow"></ana>puyüm</w>
+<w><ana lex="püj" gr="n" trans_en="tooth"></ana>püi</w>
+<w><ana lex="rualaš" gr="v,1sg" trans_en="throw"></ana>rualam</w>
+<w><ana lex="sambar" gr="n" trans_en="samovar"></ana>sambar</w>
+<w><ana lex="šonanpəl" gr="n" trans_en="rainbow"></ana>sonarbülö</w>
+<w><ana lex="tul" gr="n" trans_en="fire"></ana>tul</w>
+<w><ana lex="čəve" gr="n" trans_en="hen"></ana>tšoße</w>
+<w><ana lex="šinčaš" gr="v,prs,3sg" trans_en="sit"></ana>šińdžä</w>

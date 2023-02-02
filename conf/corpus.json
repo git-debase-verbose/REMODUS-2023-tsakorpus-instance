@@ -1,0 +1,212 @@
+{
+  "corpus_name": "testcorpus",
+  "elastic_url": "",
+  "start_page_url": "https://inel.corpora.uni-hamburg.de/WinterIsComing/search",
+  "citation": "Test corpus",
+  "input_format": "json",
+  "debug": false,
+  "media": false,
+  "video": false,
+  "media_length": 60,
+  "max_context_expand": 10,
+  "max_distance_filter": 200000,
+  "max_docs_retrieve": 9999,
+  "max_words_in_sentence": 40,
+  "query_timeout": 60,
+  "year_sort_enabled": true,
+  "viewable_meta": [
+    "filename",
+    "source",
+    "reference",
+    "collector",
+    "speaker",
+    "title",
+    "year"
+  ],
+  "sentence_meta": [
+    "speaker"
+  ],
+  "search_meta": {
+    "columns": [
+      [
+        {"type": "input_text", "name": "collector", "placeholder": "Collector"},
+        {"type": "input_text", "name": "title", "placeholder": "Title"},
+        {"type": "separator"},
+        {"type": "input_number", "name": "year_from", "placeholder": "Year: from"},
+        {"type": "input_number", "name": "year_to", "placeholder": "Year: to"}
+      ],
+      [
+        {"type": "input_text", "name": "speaker", "placeholder": "Speaker"}
+	  ]
+    ],
+    "stat_options": [
+      "source",
+      "collector",
+      "title",
+      "year"
+    ]
+  },
+  "word_fields":
+  [
+    "lex", "trans_en"
+  ],
+  "default_values": {},
+  "sentence_meta_values": {},
+  "keyboards": {
+    "mari": "beserman"
+  },
+  "generate_dictionary": true,
+  "fulltext_view_enabled": true,
+  "use_nonpersistent_fulltext_id": true,
+  "languages": ["mari", "hungarian", "german", "old_hungarian", "orig_mari"],
+  "transliterations": ["original"],
+  "input_methods": ["normal"],
+  "interface_languages": [
+    "en"
+  ],
+  "all_language_search_enabled": false,
+  "gloss_search_enabled": true,
+  "ambiguous_analyses": true,
+  "lang_props":
+  {
+    "mari":
+    {
+      "gramm_shortcuts": {
+      },
+      "gloss_shortcuts": {
+      },
+      "gr_fields_order": ["pos", "case", "poss", "number", "vPersNum", "tense", "mood", "negation", "v_form", "unknown"],
+      "gloss_selection": {
+        "columns": [
+          [
+            {"type": "gloss", "value": "NOM", "tooltip": "Nominative case"},
+            {"type": "gloss", "value": "ACC", "tooltip": "Accusative case"},
+            {"type": "gloss", "value": "GEN", "tooltip": "Genitive case"},
+            {"type": "gloss", "value": "COMPAR", "tooltip": "Comparative case"},
+            {"type": "gloss", "value": "DAT", "tooltip": "Dative case"},
+            {"type": "gloss", "value": "COMIT", "tooltip": "Comitative case"},
+            {"type": "gloss", "value": "INESS", "tooltip": "Inessive case"},
+            {"type": "gloss", "value": "ILL", "tooltip": "Illative case"},
+            {"type": "gloss", "value": "LAT", "tooltip": "Lative case"}
+          ],
+          [
+            {"type": "gloss", "value": "PL1", "tooltip": "Plural 1 (-vlak)"},
+            {"type": "gloss", "value": "PL2", "tooltip": "Plural 2 (-šaməč)"},
+            {"type": "separator"},
+            {"type": "gloss", "value": "POSS", "tooltip": "Possessive"},
+            {"type": "gloss", "value": "P1SG", "tooltip": "1sg possessive"},
+            {"type": "gloss", "value": "P1PL", "tooltip": "1pl possessive"},
+            {"type": "gloss", "value": "P2SG", "tooltip": "2sg possessive"},
+            {"type": "gloss", "value": "P2PL", "tooltip": "2pl possessive"},
+            {"type": "gloss", "value": "P3SG", "tooltip": "3sg possessive"},
+            {"type": "gloss", "value": "P3PL", "tooltip": "3pl possessive"}
+          ],
+          [
+            {"type": "gloss", "value": "PRS", "tooltip": "Present"},
+            {"type": "gloss", "value": "PST1", "tooltip": "Past 1 (-əš)"},
+            {"type": "gloss", "value": "PST2", "tooltip": "Past 2 (-en)"},
+            {"type": "gloss", "value": "IMP", "tooltip": "Imperative"},
+            {"type": "gloss", "value": "DESID", "tooltip": "Desiderative"},
+            {"type": "gloss", "value": "NEG", "tooltip": "Negative auxiliary"},
+            {"type": "gloss", "value": "CNG", "tooltip": "Connegative"}
+          ],
+          [
+            {"type": "gloss", "value": "INF", "tooltip": "Infinitive"},
+            {"type": "gloss", "value": "PTCP", "tooltip": "Participle"},
+            {"type": "gloss", "value": "PACT", "tooltip": "Active participle"},
+            {"type": "gloss", "value": "PPASS", "tooltip": "Passive participle"},
+            {"type": "gloss", "value": "PFUT", "tooltip": "Future participle"},
+            {"type": "gloss", "value": "PNEG", "tooltip": "Negative participle"},
+            {"type": "gloss", "value": "CVB", "tooltip": "Converb (gerund)"},
+            {"type": "gloss", "value": "CNEG", "tooltip": "Negative converb"},
+            {"type": "gloss", "value": "CPRIOR", "tooltip": "Prior action converb"},
+            {"type": "gloss", "value": "CFUT", "tooltip": "Future action converb"},
+            {"type": "gloss", "value": "CSIM", "tooltip": "Simultaneous converb"},
+            {"type": "gloss", "value": "NMLZ", "tooltip": "Nominalization"},
+            {"type": "separator"},
+            {"type": "gloss", "value": "UNKN", "tooltip": "Unknown marker"}
+          ]
+        ]
+      },
+      "gramm_selection": {
+        "columns": [
+          [
+            {"type": "header", "value": "Parts of speech"},
+            {"type": "gramm", "value": "n", "category": "pos", "tooltip": "Noun"},
+            {"type": "gramm", "value": "v", "category": "pos", "tooltip": "Verb"},
+            {"type": "gramm", "value": "adj", "category": "pos", "tooltip": "Adjective"},
+            {"type": "gramm", "value": "adv", "category": "pos", "tooltip": "Adverb"},
+            {"type": "gramm", "value": "num", "category": "pos", "tooltip": "Numeral"},
+            {"type": "gramm", "value": "pron", "category": "pos", "tooltip": "Pronoun"},
+            {"type": "gramm", "value": "pp", "category": "pos", "tooltip": "Postposition"},
+            {"type": "gramm", "value": "conj", "category": "pos", "tooltip": "Conjunction"},
+            {"type": "gramm", "value": "xx", "category": "pos", "tooltip": "Other"}
+          ],
+          [
+            {"type": "header", "value": "Cases"},
+            {"type": "gramm", "value": "nom", "category": "case", "tooltip": "Nominative"},
+            {"type": "gramm", "value": "acc", "category": "case", "tooltip": "Accusative"},
+            {"type": "gramm", "value": "gen", "category": "case", "tooltip": "Genitive"},
+            {"type": "gramm", "value": "dat", "category": "case", "tooltip": "Dative"},
+            {"type": "gramm", "value": "compar", "category": "case", "tooltip": "Comparative"},
+            {"type": "gramm", "value": "comit", "category": "case", "tooltip": "Comitative"}
+          ],
+          [
+            {"type": "header", "value": "Spatial cases"},
+            {"type": "gramm", "value": "iness", "category": "case", "tooltip": "Inessive"},
+            {"type": "gramm", "value": "ill", "category": "case", "tooltip": "Illative"},
+            {"type": "gramm", "value": "lat", "category": "case", "tooltip": "Lative"}
+          ],
+          [
+            {"type": "header", "value": "Possessiveness"},
+            {"type": "gramm", "value": "poss", "category": "poss", "tooltip": "Possessive"},
+            {"type": "gramm", "value": "p1sg", "category": "poss", "tooltip": "1sg possessive"},
+            {"type": "gramm", "value": "p1pl", "category": "poss", "tooltip": "1pl possessive"},
+            {"type": "gramm", "value": "p2sg", "category": "poss", "tooltip": "2sg possessive"},
+            {"type": "gramm", "value": "p2pl", "category": "poss", "tooltip": "2pl possessive"},
+            {"type": "gramm", "value": "p3sg", "category": "poss", "tooltip": "3sg possessive"},
+            {"type": "gramm", "value": "p3pl", "category": "poss", "tooltip": "3pl possessive"},
+			{"type": "header", "value": "Number"},
+            {"type": "gramm", "value": "pl1", "category": "number", "tooltip": "Plural 1 (-vlak)"},
+            {"type": "gramm", "value": "pl2", "category": "number", "tooltip": "Plural 2 (-šaməč)"}
+          ],
+          [
+            {"type": "header", "value": "Verbal person-number"},
+            {"type": "gramm", "value": "1sg", "category": "vPersNum", "tooltip": "1SG"},
+            {"type": "gramm", "value": "2sg", "category": "vPersNum", "tooltip": "2SG"},
+            {"type": "gramm", "value": "3sg", "category": "vPersNum", "tooltip": "3SG"},
+            {"type": "gramm", "value": "1pl", "category": "vPersNum", "tooltip": "1PL"},
+            {"type": "gramm", "value": "2pl", "category": "vPersNum", "tooltip": "2PL"},
+            {"type": "gramm", "value": "3pl", "category": "vPersNum", "tooltip": "3PL"}
+          ],
+          [
+            {"type": "header", "value": "Tense/Mood/Negation"},
+            {"type": "gramm", "value": "prs", "category": "tense", "tooltip": "Present tense"},
+            {"type": "gramm", "value": "pst1", "category": "tense", "tooltip": "Past 1 (-əš)"},
+            {"type": "gramm", "value": "pst2", "category": "tense", "tooltip": "Past 2 (-en)"},
+            {"type": "gramm", "value": "imp", "category": "mood", "tooltip": "Imperative"},
+            {"type": "gramm", "value": "desid", "category": "mood", "tooltip": "Desiderative"},
+            {"type": "gramm", "value": "neg", "category": "negation", "tooltip": "Negative auxiliary"},
+            {"type": "gramm", "value": "cng", "category": "negation", "tooltip": "Connegative"}
+          ],
+          [
+            {"type": "header", "value": "Non-finite forms"},
+            {"type": "gramm", "value": "inf", "category": "v_form", "tooltip": "Infinitive"},
+            {"type": "gramm", "value": "ptcp", "category": "v_form", "tooltip": "Participle"},
+            {"type": "gramm", "value": "pact", "category": "v_form", "tooltip": "Active participle"},
+            {"type": "gramm", "value": "pneg", "category": "v_form", "tooltip": "Negative participle"},
+            {"type": "gramm", "value": "ppass", "category": "v_form", "tooltip": "Passive participle"},
+            {"type": "gramm", "value": "pfut", "category": "v_form", "tooltip": "Future participle"},
+            {"type": "gramm", "value": "cvb", "category": "v_form", "tooltip": "Converb (gerund)"},
+            {"type": "gramm", "value": "cneg", "category": "v_form", "tooltip": "Negative converb"},
+            {"type": "gramm", "value": "cprior", "category": "v_form", "tooltip": "Prior action converb"},
+            {"type": "gramm", "value": "cfut", "category": "v_form", "tooltip": "Future action converb"},
+            {"type": "gramm", "value": "csim", "category": "v_form", "tooltip": "Simultaneous converb"},
+            {"type": "gramm", "value": "nmlz", "category": "v_form", "tooltip": "Nominalization"}
+          ]
+        ]
+      }
+    },
+    "undefined": {"gr_fields_order": []}
+  }
+}

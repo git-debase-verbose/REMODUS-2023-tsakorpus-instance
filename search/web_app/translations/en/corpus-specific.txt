@@ -1,0 +1,4 @@
+corpus_title	11th Winter School in Finno-ugric Studies
+langname_mari	Mari
+langname_old_hungarian	Old Hungarian
+langname_orig_mari	Original Mari
